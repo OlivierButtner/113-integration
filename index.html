@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my_first_shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="entire_page">
+    <header>
+        <div class="logo"><img src="Ressources/Logo.png" alt="logo_site"></div>
+        <nav class="menu">
+            <ul>
+                <li class="HOME">HOME</li>
+                <li>SHOP</li>
+                <li>MAGAZINE</li>
+            </ul>
+        </nav>
+        <div class="panier">
+            <img src="Ressources/Cart_Button.png" alt="image_panier">
+        </div>
+        <div class="login">LOGIN</div>
+        <div class="menu_hamburger"><img src="Ressources/Images/hamburger_icon-svg.png" alt="menu_hamburger"></div>
+    </header>
+    <section class="search">
+        <img src="Ressources/Search.png" class="loupe" alt="loupe">
+        <div class="search_signature">
+            <div class="search_text"><p class="write">Chocolate room</p>
+            </div>
+            <div class="signature">
+                <p class="Powered_by">Powered by </p>
+                <p class="Algolia">Algolia</p>
+                <img src="Ressources/Sajari%20Logo.png" class="etoile" alt="photo">
+            </div>
+        </div>
+        <div class="Best_match_arrow">
+            <p class="Best_match">Best match</p>
+            <img src="Ressources/fleche_30x15.jpg" class="arrow" alt="photo">
+
+        </div>
+
+    </section>
+
+    <div class="Filters">
+        <div>Filters</div>
+        <div><img src="Ressources/fleche_30x15.jpg" class="fleche" alt="photo"></div>
+    </div>
+
+    <section>
+        <div class="wrapper">
+            <div class="filter">
+                <div class="FILTER_BY">
+                    <div>FILTER BY</div>
+                </div>
+
+
+                <div class="Collection">
+                    <div>Collection</div>
+                    <div><img src="Ressources/fleche_30x15.jpg" class="fleche" alt="photo"></div>
+                </div>
+                <div class="Color">
+                    <div>Color</div>
+                    <div><img src="Ressources/fleche_30x15.jpg" class="fleche" alt="photo"></div>
+                </div>
+                <div class="Category">
+                    <div>Category</div>
+                    <div><img src="Ressources/fleche_30x15.jpg" class="fleche" alt="photo"></div>
+                </div>
+                <div class="Price_Range">
+                    <div>Price Range</div>
+                </div>
+
+                <form>
+                    <div id="doubleRange" class="doubleRange">
+                        <div class="barre">
+                            <div class="barreMilieu" style="width:50%; left:25%;"></div>
+                            <div class="t1 thumb" style="left:25%"></div>
+                            <div class="t2 thumb" style="left:75%;"></div>
+                        </div>
+                        <div class="label"><!--$0--><span class="labelMin"></span><!-- 10 000--><span class="labelMax"></span></div>
+                        <input type="hidden" name="pmin" value="" class="inputMin"/>
+                        <input type="hidden" name="pmax" value="" class="inputMax"/>
+                    </div>
+                </form>
+
+                <script type="text/javascript" src="index.js"></script>
+                <script type="text/javascript">
+                    setDoubleRange({
+                        element: '#doubleRange',
+                        minValue: 0,
+                        maxValue: 10000,
+                        maxInfinite: true,
+                        stepValue: 10,
+                        defaultMinValue: 0,
+                        defaultMaxValue: 5000,
+                        unite: '$'
+                    });
+                </script>
+            </div>
+
+
+            <div class="image_box">
+                <div class="image1"><img src="Ressources/Images/image1_410x246.jpg" alt="photo">
+                    <div class="infos_image">
+                        <div class="left"><p>Train</p>
+                            <p class="opacity">Full Chocolate</p>
+                            <div><img src="Ressources/Star%20-%20On.png" alt="photo"><img
+                                    src="Ressources/Star%20-%20On.png" alt="photo"><img
+                                    src="Ressources/Star%20-%20On.png" alt="photo"><img
+                                    src="Ressources/Star%20-%20On.png" alt="photo"><img
+                                    src="Ressources/Star.png" alt="photo">
+                            </div>
+                        </div>
+                        <div class="right"><p>$2,600</p><br>
+                            <img src="Ressources/Cart_Button.png" alt="photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image2"><img src="Ressources/Images/image2_410.jpg" alt="photo">
+                <div class="infos_image">
+                    <div class="left"><p>Hand with ice cream</p>
+                        <p class="opacity">Only by order</p>
+                        <div><img src="Ressources/Star%20-%20On.png" alt="photo"><img src="Ressources/Star%20-%20On.png"
+                                                                                      alt="photo"><img
+                                src="Ressources/Star%20-%20On.png" alt="photo"><img src="Ressources/Star%20-%20On.png"
+                                                                                    alt="photo"><img
+                                src="Ressources/Star.png" alt="photo">
+                        </div>
+                    </div>
+                    <div class="right"><p>$150</p><br>
+                        <img src="Ressources/Cart_Button.png" alt="photo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image3"><img src="Ressources/Images/image3_410x246.jpg" alt="photo">
+                <div class="infos_image">
+                    <div class="left"><p>Sweeties</p>
+                        <p class="opacity">per 100g</p>
+                        <div><img src="Ressources/Star%20-%20On.png" alt="photo"><img src="Ressources/Star%20-%20On.png"
+                                                                                      alt="photo"><img
+                                src="Ressources/Star%20-%20On.png" alt="photo"><img src="Ressources/Star%20-%20On.png"
+                                                                                    alt="photo"><img
+                                src="Ressources/Star.png" alt="photo">
+                        </div>
+                    </div>
+                    <div class="right"><p>$39</p><br>
+                        <img src="Ressources/Cart_Button.png" alt="photo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image4"><img src="Ressources/Images/image4_410x246.jpg" alt="photo">
+                <div class="infos_image">
+                    <div class="left"><p>Dome</p>
+                        <p class="opacity">Only fon Halloween</p>
+                        <div><img src="Ressources/Star%20-%20On.png" alt="photo"><img src="Ressources/Star%20-%20On.png"
+                                                                                      alt="photo"><img
+                                src="Ressources/Star%20-%20On.png" alt="photo"><img src="Ressources/Star%20-%20On.png"
+                                                                                    alt="photo"><img
+                                src="Ressources/Star.png" alt="photo">
+                        </div>
+                    </div>
+                    <div class="right"><p>$230</p><br>
+                        <img src="Ressources/Cart_Button.png" alt="photo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image5"><img src="Ressources/Images/image5_410x246.jpg" alt="photo">
+                <div class="infos_image">
+                    <div class="left"><p>Pastry</p>
+                        <p class="opacity">chocolate</p>
+                        <div><img src="Ressources/Star%20-%20On.png" alt="photo"><img src="Ressources/Star%20-%20On.png"
+                                                                                      alt="photo"><img
+                                src="Ressources/Star%20-%20On.png" alt="photo"><img src="Ressources/Star%20-%20On.png"
+                                                                                    alt="photo"><img
+                                src="Ressources/Star.png" alt="photo">
+                        </div>
+                    </div>
+                    <div class="right"><p>$4,99</p><br>
+                        <img src="Ressources/Cart_Button.png" alt="photo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image6"><img src="Ressources/Images/image6_410x246.jpg" alt="photo">
+                <div class="infos_image">
+                    <div class="left"><p>Eggs</p>
+                        <p class="opacity">Only by order</p>
+                        <div><img src="Ressources/Star%20-%20On.png" alt="photo"><img src="Ressources/Star%20-%20On.png"
+                                                                                      alt="photo"><img
+                                src="Ressources/Star%20-%20On.png" alt="photo"><img src="Ressources/Star%20-%20On.png"
+                                                                                    alt="photo"><img
+                                src="Ressources/Star.png" alt="photo">
+                        </div>
+                    </div>
+                    <div class="right"><p>$140</p><br>
+                        <img src="Ressources/Cart_Button.png" alt="photo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image7"><img src="Ressources/Images/image7_410x246.jpg" alt="photo">
+                <div class="infos_image">
+                    <div class="left"><p>Christmas Log</p>
+                        <p class="opacity">Enjoy</p>
+                        <div><img src="Ressources/Star%20-%20On.png" alt="photo"><img src="Ressources/Star%20-%20On.png"
+                                                                                      alt="photo"><img
+                                src="Ressources/Star%20-%20On.png" alt="photo"><img src="Ressources/Star%20-%20On.png"
+                                                                                    alt="photo"><img
+                                src="Ressources/Star.png" alt="photo">
+                        </div>
+                    </div>
+                    <div class="right"><p>$250</p><br>
+                        <img src="Ressources/Cart_Button.png" alt="photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            <div class="pagination">
+                <div class="pagination_mobile">
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                </div>
+                <div class="pagination_normal">
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                </div>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+    </footer>
+
+
+</div>
+</body>
+</html>
